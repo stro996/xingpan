@@ -67,13 +67,13 @@ nav{position:fixed;top:36px;left:0;right:0;z-index:100;padding:16px 40px;display
 
 /* DIFF */
 .diff{padding:100px 40px;background:radial-gradient(ellipse at 30% 50%,rgba(45,13,92,0.4) 0%,transparent 60%);}
-.diff-table{width:100%;border-collapse:collapse;margin-top:36px;}
+.diff-table{width:100%;border-collapse:collapse;margin-top:36px;table-layout:fixed;}
 .diff-table th{padding:16px 24px;font-size:14px;letter-spacing:2px;font-family:'Cormorant Garamond',serif;}
 .diff-table th:first-child{color:var(--text-dim);background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);}
 .diff-table th:last-child{color:var(--purple-deep);background:var(--gold);}
-.diff-table td{padding:14px 24px;font-size:14px;border-bottom:1px solid rgba(201,169,110,0.08);line-height:1.8;vertical-align:top;}
+.diff-table td{padding:14px 24px;font-size:14px;border-bottom:1px solid rgba(201,169,110,0.08);line-height:1.8;vertical-align:top;overflow-wrap:break-word;word-wrap:break-word;}
 .diff-table td:first-child{color:var(--text-dim);background:rgba(255,255,255,0.02);border-right:1px solid rgba(255,255,255,0.08);}
-.diff-table td:last-child{color:var(--text-primary);background:rgba(201,169,110,0.06);font-weight:600;}
+.diff-table td:last-child{color:var(--text-primary);background:rgba(201,169,110,0.06);font-weight:600;word-break:keep-all;}
 .diff-check{color:var(--gold);margin-right:8px;}
 
 /* TEACHER */
@@ -182,8 +182,8 @@ footer{padding:36px;text-align:center;border-top:1px solid rgba(201,169,110,0.1)
   .testi-card.big{grid-column:auto;}
   .teacher-layout{grid-template-columns:1fr;gap:32px;}
   .teacher-photo-wrap{max-width:280px;margin:0 auto;}
-  .diff-table thead,.diff-table tbody,.diff-table th,.diff-table td,.diff-table tr{display:block;}
-  .diff-table th:first-child,.diff-table td:first-child{display:none;}
+  .diff-table{font-size:12px;}
+  .diff-table th,.diff-table td{padding:10px 12px;}
   .price-box{padding:36px 20px;}
   .price-amount{font-size:56px;}
   section{padding-left:20px!important;padding-right:20px!important;}
